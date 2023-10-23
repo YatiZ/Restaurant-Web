@@ -3,7 +3,7 @@ import React from 'react'
 const ContactPage = () => {
   return (
     <div className='center'>
-        <h1>Contact Us</h1>
+        <h1 className='line'>Contact Us</h1>
         <form action="">
             <div className='inputbox'>
                 <input type="text" required="required" />

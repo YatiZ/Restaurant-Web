@@ -15,7 +15,7 @@ const HomePage = () => {
           <div class="row">
             <div class="col-md-12 text-center ">
               <h3 class="animate-charcter"> EKOSH</h3>
-              <Link to="/menu" className="p-3 bg-green-400 ml-5">Order Now!</Link>
+              <Link to="/menu" className="p-3 ml-5 button-85">Order Now!</Link>
             </div>
             
           </div>

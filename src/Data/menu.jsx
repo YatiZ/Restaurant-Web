@@ -1,9 +1,12 @@
-import food1 from "../images/pngegg (1).png";
+import food1 from "../images/beef.png";
 import chickenImg from "../images/pngegg (2).png";
 import prawnImg from "../images/pngegg (6).png";
 import noodleImg from "../images/pngegg (7).png";
 import food2 from "../images/pngegg (4).png";
-import food3 from "../images/pngegg (5).png";
+import food3 from "../images/barger.png";
+import soup from "../images/soup.png";
+import salmon from "../images/salmon.png";
+import grilledFish from '../images/grilledFish.png';
 
 export const menu = [
     {
@@ -16,8 +19,8 @@ export const menu = [
     },
     {
       id: 2,
-      name: "Pizza",
-      ingredients: ["dough", "tomato sauce", "cheese", "toppings"],
+      name: "Grilled Chicken",
+      ingredients: ["chicken", "grilled powder", "seasonings"],
       price: 15,
       image: chickenImg,
       rating:5,
@@ -27,23 +30,24 @@ export const menu = [
       name: "Hamburger",
       ingredients: ["bun", "hamburger patty", "cheese", "ketchup", "mustard"],
       price: 10,
-      image: prawnImg,
+      image: food3,
       rating:4,
     },
     {
       id: 4,
-      name: "Pasta",
-      ingredients: ["pasta noodles", "sauce", "protein"],
-      price: 12,
-      image: noodleImg,
-      rating:5,
+      name: "Thai Fried Fish",
+      ingredients: ["Fish", "protein", "veggies", "condiments"],
+      price: 7,
+      image: grilledFish,
+      rating:4,
+      
     },
     {
       id: 5,
-      name: "Salad",
-      ingredients: ["greens", "veggies", "dressing"],
+      name: "Salmon",
+      ingredients: ["greens", "veggies", "salmon"],
       price: 8,
-      image: food3,
+      image: salmon,
       rating:4,
     },
     {
@@ -51,23 +55,24 @@ export const menu = [
       name: "Soup",
       ingredients: ["broth", "protein", "vegetables"],
       price: 6,
-      image: food2,
+      image: soup,
       rating:3,
     },
     {
       id: 7,
-      name: "Sandwich",
-      ingredients: ["bread", "protein", "veggies", "condiments"],
-      price: 7,
+      name: "Grilled Prawn",
+      ingredients: ["prawn", "cheese", "lemon", "chilli sauce"],
+      price: 11,
       image: prawnImg,
-      rating:4,
+      rating:5,
+      
     },
     {
       id: 8,
-      name: "Breakfast Burrito",
-      ingredients: ["tortilla", "eggs", "meat", "cheese", "salsa"],
-      price: 11,
-      image: food1,
+      name: "Pasta",
+      ingredients: ["pasta noodles", "sauce", "protein"],
+      price: 12,
+      image: noodleImg,
       rating:5,
     },
     {
