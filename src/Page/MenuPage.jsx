@@ -40,7 +40,8 @@ const MenuPage = () => {
        
        </div>
        <div className='pt-8 mr-3'>
-         <button className='bg-red-500 p-3 text-xs'>Order Now!</button>
+         <button className=' button-53 text-sm'>Order <br /> Now!</button>
+        
            {/* <img src={order} alt="" className='w-36 hover:cursor-pointer'/> */}
        </div>
        </div>

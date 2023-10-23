@@ -20,10 +20,10 @@ const Footer = () => {
         <div className='text-white p-5'>
             <div className='flex flex-col md:flex-row justify-between px-10 leading-10'>
                 <div > <h1 className='text-3xl'>Restaurant Address</h1>
-                 <p>600 The Embarcadero, San Francisco, CA 94107, United States</p>
+                 <li>600 The Embarcadero, San Francisco, CA 94107, United States</li>
                  <hr />
                  <h1 className='text-3xl'>Call Us</h1>
-                 <p>(255) 352-6250</p>
+                 <li>(255) 352-6250</li>
                  <hr />
                  <h1 className='text-3xl'>Opening Hour</h1>
                  <li>Monday-Saturday: 10AM-10PM</li>
