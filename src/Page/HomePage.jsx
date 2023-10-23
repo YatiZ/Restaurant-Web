@@ -10,10 +10,10 @@ import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className="pt-10">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-col md:flex-row md:justify-between justify-center">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center ">
               <h3 class="animate-charcter"> EKOSH</h3>
               <Link to="/menu" className="p-3 bg-green-400 ml-5">Order Now!</Link>
             </div>
@@ -21,18 +21,19 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="w-64 ">
+        <div className="w-64 mx-20 md:mx-0">
           <img src={chickenImg} alt="" className="w-full" />
         </div>
-      </div>
 
-      <div className="absolute w-1/2">
+        </div>
+
+      <div className="absolute md:w-1/2 w-full px-6 md:px-0 mt-10 md:mt-0">
         <img src={food3} alt="" />
       </div>
 
       <div className="font-Serif italic">
-      <marquee scrolldelay="50" className="">
-        <p>
+      <marquee scrolldelay="50">
+        <p className="animate-pulse text-red-600">
           Lorem ipsum dolor, sit amet consectetur<br></br> adipisicing elit.
           Atque doloremque hic qui sint, illo temporibus praesentium nemo <br />{" "}
           veniam mollitia, cum laudantium saepe. Hic maiores unde optio harum
@@ -45,7 +46,7 @@ const HomePage = () => {
       </marquee>
       <marquee>
         <div className="flex flex-row items-center">
-        <p>
+        <p className="animate-pulse text-red-600">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Cumque
             doloribus dolore aperiam aliquam fugit odit corrupti, inventore quia
             
@@ -57,14 +58,14 @@ const HomePage = () => {
       <marquee className="" scrolldelay="0">
 
         <div className="flex flex-row gap-14 items-center">
-            <p>doloribus dolore aperiam aliquam fugit odit corrupti, inventore quia
+            <p className="animate-pulse text-red-600">doloribus dolore aperiam aliquam fugit odit corrupti, inventore quia
           illum quod sunt mollitia possimus rem quo</p>
         <img src={prawnImg} alt="" className="w-36" /> 
           <img src={noodleImg} alt="" className="w-36 " />
           
         </div>
 
-        <span>
+        <span className="animate-pulse text-red-600">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
            ut necessitatibus sequi
           provident aliquid.
@@ -72,7 +73,7 @@ const HomePage = () => {
       </marquee>
       <marquee className="">
         <div className="w-36 flex flex-row">
-          <p className="items-center">Lorem ipsum dolor sit amet consectetur</p>
+          <p className="items-center animate-pulse text-red-600">Lorem ipsum dolor sit amet consectetur</p>
         </div>
       </marquee>
       </div>

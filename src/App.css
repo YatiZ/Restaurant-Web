@@ -65,6 +65,7 @@
 
 /* contact us style */
 
+
 .center {
   border: 1px solid;
   position: relative;
@@ -131,6 +132,40 @@
 }
 .center button {
   background:dodgerblue;
+}
+@media (max-width: 768px) {
+  .center {
+    font-size: medium;
+    width: fit-content;
+    margin-left: 50px;
+    top: 90px;
+    padding: 50px;
+    background: #9e202023;
+    border-radius: 10px;
+    margin-bottom: 150px;
+    /* font-size: 1.25rem; */
+  }
+  .center h1{
+    font-size: 24px;
+  }
+  .center .inputbox{
+    width: 200px;
+    height: 20px;
+    font-size: small;
+   
+  }
+  .center .inputbox input{
+    padding: 2px;
+    align-items: center;
+  }
+  .center .inputbox span {
+   
+    top: 7px;
+    left: 10px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+  }
 }
 
 /* order button style */

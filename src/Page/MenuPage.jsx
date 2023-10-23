@@ -10,7 +10,7 @@ const MenuPage = () => {
 <h1 className='text-center text-5xl font-Serif font-bold text-red-500 m-6'>Our Top Menu</h1>
 
 
-   <div className='grid grid-cols-3 mt-32 gap-5 gap-y-28' >
+   <div className='grid md:grid-cols-3 grid-cols-1 mt-32 gap-5 gap-y-28 ' >
    {menu.map((food,index)=>(
    <div key={index} className=''>
        <img src={food.image} alt="" className='w-36 absolute -mt-24 ml-20'/>

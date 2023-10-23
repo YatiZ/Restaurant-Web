@@ -6,7 +6,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
   return (
     <div className='bg-black mt-3' >
-        <div className='flex md:flex-row flex-col bg-yellow-300 p-4 gap-5 items-center pl-14'>
+        <div className='flex md:flex-row flex-col bg-yellow-300 p-4 gap-5 items-center md:pl-14 pl-3'>
             <div className='bg-black rounded-full text-white p-6'><ThumbUpIcon/></div>
             
             <div><h1>Enjoyed your meal? Leave us review!</h1> 
@@ -28,7 +28,7 @@ const Footer = () => {
                  <h1 className='text-3xl'>Opening Hour</h1>
                  <li>Monday-Saturday: 10AM-10PM</li>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201807.51023125357!2d-122.67682531328121!3d37.784359900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580770df6174d%3A0x8be3ee157d693ab2!2sDelancey%20Street%20Restaurant!5e0!3m2!1sen!2smm!4v1698056414989!5m2!1sen!2smm" className='w-80 h-64 border-none' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201807.51023125357!2d-122.67682531328121!3d37.784359900000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580770df6174d%3A0x8be3ee157d693ab2!2sDelancey%20Street%20Restaurant!5e0!3m2!1sen!2smm!4v1698056414989!5m2!1sen!2smm" className='w-80 h-64 border-none' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="mr-1"></iframe>
             </div>
             <div>
                 
