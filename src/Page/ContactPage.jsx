@@ -13,8 +13,8 @@ const ContactPage = () => {
                 <input type="text" required="required" />
                 <span>Email</span>
             </div>
-            <div className='inputbox'>
-                <input type="text" required="required" />
+            <div className='inputbox '>
+                <input className='inputtext' type="text" required="required" />
                 <span>Message</span>
             </div>
             <div className='inputbox'>

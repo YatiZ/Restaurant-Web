@@ -1,10 +1,10 @@
-import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import img1 from "../images/restaurant exterior.jpg";
 import img2 from "../images/restaurant interior.jpg";
 import img3 from "../images/kitchen.jpg";
-import img4 from "../images/restaurant.jpg";
+
 
 import React, { useState, useEffect } from 'react';
 

@@ -71,8 +71,10 @@
 .center {
   border: 1px solid;
   position: relative;
-  width: fit-content;
-  margin-left: 350px;
+  width: 600px;
+  display: grid;
+ justify-content: center;
+  margin-left: 200px;
   top: 90px;
   padding: 30px;
   background: #9e202023;
@@ -86,7 +88,7 @@
   padding: 10px;
   color: #000;
   letter-spacing: 5px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-weight: bold;
   padding-left: 10px;
 }
@@ -94,7 +96,7 @@
   position: relative;
   width: 300px;
   height: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .center .inputbox input {
   position: absolute;
@@ -119,12 +121,17 @@
   transition: 0.6s;
   font-family: sans-serif;
 }
+.inputtext{
+   height: 100px;
+}
 .center .inputbox input:focus ~ span,
 .center .inputbox input:valid ~ span {
   transform: translateX(-13px) translateY(-35px);
   font-size: 1em;
 }
 .center button {
+  margin-top: 30px;
+  margin-bottom: 20px;
   width: 50%;
   background: dodgerblue;
   color: #fff;
@@ -137,21 +144,25 @@
 }
 @media (max-width: 768px) {
   .center {
-    font-size: medium;
-    width: fit-content;
-    margin-left: 50px;
-    top: 90px;
-    padding: 50px;
-    background: #9e202023;
-    border-radius: 10px;
-    margin-bottom: 150px;
+    border: 1px solid;
+  position: relative;
+  width: fit-content;
+  display: grid;
+ justify-content: center;
+  margin-left: 37px;
+  top: 90px;
+  padding: 30px;
+  background: #9e202023;
+  border-radius: 10px;
+  margin-bottom: 150px;
+  padding-bottom: 100px;
     /* font-size: 1.25rem; */
   }
   .center h1{
     font-size: 24px;
   }
   .center .inputbox{
-    width: 200px;
+    width: 250px;
     height: 20px;
     font-size: small;
    
@@ -167,6 +178,9 @@
     font-size: 1em;
     transition: 0.6s;
     font-family: sans-serif;
+  }
+  .center button{
+    margin-top: 50px;
   }
 }
 
