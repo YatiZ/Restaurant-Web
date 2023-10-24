@@ -1,11 +1,14 @@
 import React from 'react';
 import chefImg from '../images/chef.png';
+import SliderSection from '../Components/Slider';
 
 const AboutUsPage = () => {
   return (
     <div className='pt-20 relative'>
-        <div>Slide </div>
-        <div className='border shadow-xl md:mx-24 mx-4'>
+        <div> 
+           <SliderSection/>
+        </div>
+        <div className='border shadow-xl md:mx-24 mx-4 mt-5'>
             <h1 className='line text-center'>About Us</h1>
         <div className='flex flex-row'>
             <div className='w-1/2 px-5 pt-5 md:overflow-hidden overflow-scroll md:h-auto h-36'>

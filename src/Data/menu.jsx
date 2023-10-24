@@ -28,7 +28,7 @@ export const menu = [
     {
       id: 3,
       name: "Hamburger",
-      ingredients: ["bun", "hamburger patty", "cheese", "ketchup", "mustard"],
+      ingredients: ["bun", "cheese", "mustard"],
       price: 10,
       image: food3,
       rating:4,
