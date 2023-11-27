@@ -1,20 +1,12 @@
 import React from 'react';
-import order from "../images/order.png";
-import { menu } from '../Data/menu';
+import {menu} from '../Data/menu';
 import StarRateIcon from '@mui/icons-material/StarRate';
-import BreakfastMenu from '../MiniPages/BreakfastMenu';
-import SearchBox from '../Components/Search';
 
-const MenuPage = () => {
+const BreakfastMenu = () => {
   return (
-    <div className='p-10'>
-      <div className=' flex justify-end items-center'>
-<SearchBox/>
-</div>
-<h1 className='text-center text-5xl font-Serif font-bold text-red-500  underline underline-offset-8 decoration-sky-600 line'>Our Top Menu</h1>
+    <div className='pt-14'>
+<h1 className='text-center text-5xl font-Serif font-bold text-red-500 m-6 underline underline-offset-8 decoration-sky-600 line'>Breakfast Menu</h1>
 
-   
-        
 
    <div className='grid md:grid-cols-3 grid-cols-1 mt-32 gap-5 gap-y-28 ' >
    {menu.map((food,index)=>(
@@ -62,9 +54,9 @@ const MenuPage = () => {
 
 ))}
 </div>
-        <BreakfastMenu/>
+        
     </div>
   )
 }
 
-export default MenuPage
+export default BreakfastMenu

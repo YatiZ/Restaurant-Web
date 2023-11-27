@@ -8,18 +8,21 @@ import Footer from './Components/Footer';
 import AboutUsPage from './Page/AboutUsPage';
 import ContactPage from './Page/ContactPage';
 
+
+
 function App() {
   return (
     <div >
       
       <NavBar/>
+    
       <Routes>
         <Route path='/' element={ <HomePage/>}></Route>
         <Route path='/menu' element={ <MenuPage/>}></Route>
         <Route path='/about-us' element={ <AboutUsPage/>}></Route>
         <Route path='/contact-us' element={<ContactPage/>}></Route>
       </Routes>
-   
+      
       <Footer/>
     </div>
   );

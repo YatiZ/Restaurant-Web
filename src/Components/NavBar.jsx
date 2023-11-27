@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import navLogo from '../images/logoNN.png';
+import Searching from "./Search";
 
 
 const NavBar = () => {
@@ -18,6 +19,7 @@ const NavBar = () => {
         
         <Link className="link" to='/contact-us'>CONTACT US</Link>
       </div>
+     
     </div>
   );
 };
