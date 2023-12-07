@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 const Footer = () => {
+  
   return (
-    <div className='bg-black mt-3' >
+    <div className='bg-black mt-3 w-full mx-0' >
         <div className='flex md:flex-row flex-col bg-yellow-300 p-4 gap-5 items-center md:pl-14 pl-3'>
-            <div className='bg-black rounded-full text-white p-6'><ThumbUpIcon/></div>
+            <div className='bg-black rounded-full text-white p-6'>
+              <Link to='/review-page'>
+              <ThumbUpIcon/>
+              </Link>
+              
+              </div>
             
             <div><h1>Enjoyed your meal? Leave us review!</h1> 
              Never surrender. Special cloth alert. It's on you how you want to live your life. <br /> Everyone has a choice. I pick my choice, squickly clean. Another one.</div>

@@ -5,6 +5,7 @@ module.exports = {
     fontFamily:{
       'GreatVibes': 'Great Vibes, cursive',
       'Serif':'ui-serif, Georgia',
+  
     },
     extend: {},
   },
