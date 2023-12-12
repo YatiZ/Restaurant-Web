@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import {menu} from '../Data/menu';
 import StarRateIcon from '@mui/icons-material/StarRate';
+import { OrderContext } from '../context/useOrderContext';
 
 const BreakfastMenu = () => {
+  const {handleOrderClick} = useContext(OrderContext);
   return (
     <div className='pt-14'>
 <h1 className='text-center text-5xl font-Serif font-bold text-red-500 m-6 underline underline-offset-8 decoration-sky-600 line'>Breakfast Menu</h1>
@@ -41,9 +43,8 @@ const BreakfastMenu = () => {
        
        </div>
        <div className='pt-8 mr-3'>
-         <button className=' button-53 text-sm'>Order <br /> Now!</button>
+         <button onClick={()=>handleOrderClick(food)} className=' button-53 text-sm'>Order <br /> Now!</button>
         
-           {/* <img src={order} alt="" className='w-36 hover:cursor-pointer'/> */}
        </div>
        </div>
        

@@ -1,5 +1,40 @@
-[
-    {"id":1,"username":"Lucy","body":"Customer Service is quite good!", "rating":4},
-    {"id":2,"username":"Mafia","body":"Food are delicious!", "rating":3}
-]
-
+{
+  "reviews": [
+    {
+      "id": 1,
+      "username": "Lucy",
+      "body": "Customer Service is quite good!",
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "username": "Mafia",
+      "body": "Food are delicious!",
+      "rating": 3
+    },
+    {
+      "username": "hhhee",
+      "body": "cafsd",
+      "rating": 1,
+      "id": 3
+    },
+    {
+      "username": "re",
+      "body": "frer",
+      "rating": 1,
+      "id": 4
+    },
+    {
+      "username": "jouis",
+      "body": "ceeee",
+      "rating": "2",
+      "id": 5
+    },
+    {
+      "username": "ndkde",
+      "body": "cccc",
+      "rating": 1,
+      "id": 6
+    }
+  ]
+}

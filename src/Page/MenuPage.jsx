@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import order from "../images/order.png";
 import { menu } from '../Data/menu';
 import StarRateIcon from '@mui/icons-material/StarRate';
@@ -6,19 +6,12 @@ import BreakfastMenu from '../MiniPages/BreakfastMenu';
 import SearchBox from '../Components/Search';
 import IntegrationNotistack from '../Components/Alert';
 import { SnackbarProvider, useSnackbar } from 'notistack';
+import { OrderContext } from '../context/useOrderContext';
 
 
 const MenuPage = () => {
-  const [orderFun, setOrderFun] = useState(false)
-  const [showAlert, setShowAlert] = useState(null)
-  const {enqueueSnackbar} = useSnackbar();
+  const {handleOrderClick} = useContext(OrderContext);
   
-  const handleOrderClick = (food)=>{
-     console.log(`order: ${food.name}`)
-    //  setOrderFun(!orderFun)
-     enqueueSnackbar('Successfully ordered!',{food})
-     setShowAlert(food === showAlert? null: food)
-  }
   return (
     <SnackbarProvider>
 

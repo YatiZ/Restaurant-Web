@@ -16,15 +16,15 @@ const ReviewModel = ({username,setUsername, body, setBody, rating, setRating,han
        
        <label className='items-center flex gap-1'>
           <span className=''>Username </span>
-           <input className='w-full p-1.5 shadow-md rounded-lg focus:outline-lime-700' type="text" onChange={(e)=>setUsername(e.target.value)} value={username} required/>
+           <input className='text-black w-full p-1.5 shadow-md rounded-lg focus:outline-lime-700' type="text" onChange={(e)=>setUsername(e.target.value)} value={username} required/>
        </label>
        <label className='items-center flex gap-2'>
            <span>Messages </span>
-           <textarea className='w-full p-1.5 shadow-md rounded-lg focus:outline-lime-700' required onChange={(e)=>setBody(e.target.value)} value={body} ></textarea>
+           <textarea className='text-black w-full p-1.5 shadow-md rounded-lg focus:outline-lime-700' required onChange={(e)=>setBody(e.target.value)} value={body} ></textarea>
        </label>
        <label className='items-center flex gap-9'>
            <span>rating </span>
-           <input className='w-full p-1.5 shadow-md rounded-lg focus:outline-lime-700' type="number" onChange={(e)=>setRating(e.target.value)} value={rating}/>
+           <input max={5} className='text-black w-full p-1.5 shadow-md rounded-lg focus:outline-lime-700' type="number" onChange={(e)=>setRating(e.target.value)} value={rating}/>
        </label>
        <button className='button-85 mt-3 flex gap-3 justify-center '>
           <span>Send</span>

@@ -1,14 +1,21 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 
 const OrderContext = createContext()
 
-const OrderProvider = () => {
-    const useOrderProvider = createContext()
-  return (
-    <div>
+const OrderProvider = ({children}) => {
+    const [orderFood, setOrderFood] = useState([]);
+
+    const handleOrderClick = (food)=>{
+        console.log('food',food)
         
-    </div>
+       setOrderFood(prevOrderFood => [...prevOrderFood,food])
+       console.log('Order',orderFood)
+    }
+  return (
+    <OrderContext.Provider value={{handleOrderClick,orderFood}}>
+        {children}
+    </OrderContext.Provider>
   )
 }
 
-export {useOrderContext,OrderProvider}
+export {OrderContext,OrderProvider}
