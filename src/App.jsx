@@ -9,6 +9,7 @@ import AboutUsPage from './Page/AboutUsPage';
 import ContactPage from './Page/ContactPage';
 import OrderPage from './Page/OrderPage';
 import ReviewPage from './Page/ReviewPage';
+import OrderPopUp from './Components/OrderPopUp';
 
 
 
@@ -17,7 +18,7 @@ function App() {
     <div >
       
       <NavBar/>
-    
+      <OrderPopUp/>
       <Routes>
         <Route path='/' element={ <HomePage/>}></Route>
         <Route path='/menu' element={ <MenuPage/>}></Route>

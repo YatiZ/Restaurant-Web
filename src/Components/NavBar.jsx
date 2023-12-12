@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import navLogo from '../images/logoNN.png';
 import Searching from "./Search";
+import OrderPopUp from "./OrderPopUp";
 
 
 const NavBar = () => {
@@ -17,9 +18,10 @@ const NavBar = () => {
         <img src={navLogo} alt="" className="w-full h-full object-contain"/>
         </div>
         <Link className="link" to='/order-list'>ORDER LIST</Link>
+        
         <Link className="link" to='/contact-us'>CONTACT US</Link>
       </div>
-     
+      
     </div>
   );
 };

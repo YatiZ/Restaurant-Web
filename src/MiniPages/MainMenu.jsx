@@ -2,12 +2,13 @@ import React, { useContext, useState } from 'react';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import { OrderContext } from '../context/useOrderContext';
 
-const BreakfastMenu = ({menu}) => {
-  const {handleOrderClick} = useContext(OrderContext);
+const MainMenu = ({menu}) => {
+    const {handleOrderClick} = useContext(OrderContext);
   return (
     <div className='pt-14'>
-      {menu? <h1 className='text-center text-5xl font-Serif font-bold text-red-500 m-6 underline underline-offset-8 decoration-sky-600 line'>Breakfast Menu</h1>:<div>Hello</div>}
-      
+<h1 className='text-center text-5xl font-Serif font-bold text-red-500  underline underline-offset-8 decoration-sky-600 line'>Our Top Menu</h1>
+
+
    <div className='grid md:grid-cols-3 grid-cols-1 mt-32 gap-5 gap-y-28 ' >
    {menu.map((food,index)=>(
    <div key={index} className=''>
@@ -58,4 +59,4 @@ const BreakfastMenu = ({menu}) => {
   )
 }
 
-export default BreakfastMenu
+export default MainMenu

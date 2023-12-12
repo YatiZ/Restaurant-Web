@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SearchIcon from '@mui/icons-material/Search';
 
-const SearchBox = () => {
+const SearchBox = ({handleSearching}) => {
 
   return (
     <div className='w-fit h-fit pt-10 pr-10 relative'>
@@ -11,6 +11,7 @@ const SearchBox = () => {
         placeholder='Search...'
         onFocus={(e)=>e.target.classList.add('w-72','rounded-none','bg-transparent','border-b-2','border-white','placeholder-red-500')}
         onBlur={(e)=>e.target.classList.remove('w-72','rounded-none','bg-transparent','border-b-2','border-white','placeholder-red-500')}
+        onChange={handleSearching}
         />
         <SearchIcon className='absolute text-black mx-3 cursor-not-allowed focus:hidden'/>
         </button>
